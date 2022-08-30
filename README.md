@@ -5,19 +5,22 @@ Is Financial Time Series Data even predictable? Many believe that moves in finan
 
 # Model Logistics
 
-I will be using a model to predict Tesla closing returns after 5 days. The model I used consists of a stacked LSTM and a Transformer. LSTM stands for long short-term memory and stacking LSTM means multiple LSTMs. It is a type of recurrent neural network, which is a neural network that uses the same unit over and over again for learning. Because LSTM is specialized for processing sequential data and compared to other recurrent neural networks, is great for remembering long-term trends, it is the perfect pick when working with financial time series data. I believe that the most consistent investors trade based on how the stock is doing over a long time period and I wanted that to reflect in my model. Additional information on how LSTM remember long-term trends can be seen in the Additional Resources.
+I will be using a model to predict if Tesla has a positive or negative return in 5 days. The model I used consists of a stacked LSTM and a Transformer. LSTM stands for long short-term memory and stacking LSTM means multiple LSTMs. It is a type of recurrent neural network, which is a neural network that uses the same unit over and over again for learning. Because LSTM is specialized for processing sequential data and compared to other recurrent neural networks, is great for remembering long-term trends, it is the perfect pick when working with financial time series data. I believe that the most consistent investors trade based on how the stock is doing over a long time period and I wanted that to reflect in my model. Additional information on how LSTM remember long-term trends can be seen in the Additional Resources.
 
 Transformers were popularized by Google's BERT model in 2017. Their model was used for natural language processing and creating A.I that could understand human language better. One interesting aspect of the Transformer is its attention mechanism. It allowed the model to learn how much each word means to each other word or the interconnectivity of the words. Due to its recent popularity, only few have tried to apply transformers to finance. However, I believed that it is definitely something worth diving deeper into. The model will not only learn a sequential pattern, but also a categorical pattern. Additional information on how Self-Attention is learned can be seen in the Additional Resources.
 
-Combining the temporal encoding from LSTM and the attention encoding from the Transformer, I trained my model from '2010-08-23' to '2020-08-23' and then tested from 2020-08-23' to '2022-08-10' in order to find the best-performing model in terms of test accuracy. Then, I trained with that model from '2010-08-23' to '2022-08-10'. The input of the model consists of closing returns and volumes for Tesla, Apple, SP 500, and VIX, and standard deviation of the past X days. This is a lot of input and training, so I used Google Colab Pro+ for a much needed boost in GPU computational power. It allowed me train one of models in only 20 hours! In the folder /models, you can find all the notebooks I used for training.
+Combining the temporal encoding from LSTM and the attention encoding from the Transformer, I trained my model using a sliding window from '2010-08-23' to '2020-08-23' and then tested from 2020-08-23' to '2022-08-10' in order to find the best-performing model in terms of test accuracy. Then, I trained with that model from '2010-08-23' to '2022-08-10'. The input of the model consists of closing returns and volumes for Tesla, Apple, SP 500, and VIX, and standard deviation of the past X days. This is a lot of input and training, so I used Google Colab Pro+ for a much needed boost in GPU computational power. It allowed me train one of models in only 20 hours! In the folder /models, you can find all the notebooks I used for training.
 
 # Results
 
-I also created a model to predict Tesla closing returns after 3 days. I then combined the two models together, so that they reinforced each other. 
+I also created a model to predict if Tesla has a positive or negative return in 3 days. I then combined the two models together, so that they reinforced each other. Here is how two versions of my reinforced model did. One is stateful and the other is non-stateful. These are two different types of training hyperparamters.
 
 ![Stateful Graph](/graphs/5_day_buy_Stateful_lag3.png)
+Caption: The Red Dots are when the Stateful model predicts a buy or a positive return in 5 days.
 ![Non-Stateful Graph](/graphs/Buy_Non_stateful_lag3.png)
+Caption: The Red Dots are when the Non-Stateful model predicts a buy or a positive return in 5 days.
 ![Stateful Sell Graph](/graphs/5day_sell_stateful_lag3.png)
+Caption: The Red Dots are when the Stateful model predicts a sell or a negative return in 5 days.
 
 References:
 
