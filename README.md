@@ -1,5 +1,6 @@
-# LSTM-Transform
-Using Machine Learning to predict if Tesla will have a positive or negative closing return after 5 days 
+# Predicting Financial Time Series Data with a LSTM-Transformer Machine Learning Model
+Using Machine Learning to predict if Tesla will have a positive or negative closing return after 5 days.
+
 
 ![Stateful Graph](/graphs/5_day_buy_Stateful_lag3.png)
 ![Non-Stateful Graph](/graphs/Buy_Non_stateful_lag3.png)
