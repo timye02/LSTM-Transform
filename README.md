@@ -53,6 +53,7 @@ https://arxiv.org/pdf/2109.12621.pdf
 https://www.alpharithms.com/predicting-stock-prices-with-linear-regression-214618/
 
 Additional Resources:
+
 (LSTM) https://towardsdatascience.com/lstm-networks-a-detailed-explanation-8fae6aefc7f9
 
 (Transformer) https://towardsdatascience.com/transformers-explained-visually-part-3-multi-head-attention-deep-dive-1c1ff1024853
