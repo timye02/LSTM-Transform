@@ -16,11 +16,15 @@ Combining the temporal encoding from LSTM and the attention encoding from the Tr
 I also created a model to predict if Tesla has a positive or negative return in 3 days. I then combined the two models together, so that they reinforced each other. Here is how two versions of my reinforced model did. One is stateful and the other is non-stateful. These are two different types of training hyperparamters.
 
 ![Stateful Graph](/graphs/5_day_buy_Stateful_lag3.png)
-Caption: The Red Dots are when the Stateful model predicts a buy or a positive return in 5 days.
+Graph 1: The Red Dots are when the Stateful model predicts a buy or a positive return in 5 days.
+
 ![Non-Stateful Graph](/graphs/Buy_Non_stateful_lag3.png)
-Caption: The Red Dots are when the Non-Stateful model predicts a buy or a positive return in 5 days.
+Graph 2: The Red Dots are when the Non-Stateful model predicts a buy or a positive return in 5 days.
+
 ![Stateful Sell Graph](/graphs/5day_sell_stateful_lag3.png)
-Caption: The Red Dots are when the Stateful model predicts a sell or a negative return in 5 days.
+Graph 3: The Red Dots are when the Stateful model predicts a sell or a negative return in 5 days.
+
+
 
 References:
 
