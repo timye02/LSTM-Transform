@@ -2,7 +2,8 @@
 Using Machine Learning to predict if Tesla will have a positive or negative closing return after 5 days 
 
 ![Stateful Graph](/graphs/5_day_buy_Stateful_lag3.png)
-
+![Non-Stateful Graph](/graphs/Buy_Non_stateful_lag3.png)
+![Stateful Sell Graph](/graphs/5day_sell_stateful_lag3.png)
 References:
 https://arxiv.org/pdf/2109.12621.pdf
 
