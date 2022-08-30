@@ -40,11 +40,11 @@ If you used the reinforced stateful model between 2020-10-22 00:00:00 and 2020-1
 
 If you used a linear regression model between 2020-10-22 00:00:00 and 2020-12-31 00:00:00, you get a 0.1518 return.
 
-Note: 2020-10-22 00:00:00 and 2020-12-31 00:00:00 was randomly picked as it was the range that the article used.
+Note: 2020-10-22 00:00:00 and 2020-12-31 00:00:00 was randomly picked as it was the range that the linear regression article used.
 
 # Conclusion
 
-Though the results look very optimistic, keep in mind that this is only for Tesla. The model might have been biased. The financial market is always changing so this model may be just getting "lucky". However, this is just the start as my model can be more trustworthy and optimized with further knowledge and time. I believe machine learning especially neural networks shows real promise in uncovering the intricate patterns of the financial markets. 
+Though the results look very optimistic, keep in mind that this is only for Tesla. The model might have been biased. The financial market is always changing so this model may be just getting "lucky". However, this is just the start as my model can be more trustworthy and optimal with further knowledge and time. I believe machine learning especially neural networks shows real promise in uncovering the intricate patterns of the financial markets. 
 
 References:
 
