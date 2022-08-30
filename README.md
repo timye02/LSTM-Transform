@@ -1,5 +1,8 @@
 # Predicting Financial Time Series Data with a LSTM-Transformer Machine Learning Model
-Using Machine Learning to predict if Tesla will have a positive or negative closing return after 5 days.
+
+Is Financial Time Series Data even predictable? Many believe that moves in financial time series data are synonymous to Brownian Motion in physics, which is how microscopic particles move randomly due to surrounding collisions. Question answered. It sounds like cannot be predicted. However, this may be only the case for the human eye. Using computers and machine learning, there is a possibility for non-linear patterns.
+
+
 
 
 ![Stateful Graph](/graphs/5_day_buy_Stateful_lag3.png)
