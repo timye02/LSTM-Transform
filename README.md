@@ -40,7 +40,7 @@ If you used the reinforced stateful model between 2020-10-22 00:00:00 and 2020-1
 
 If you used a linear regression model between 2020-10-22 00:00:00 and 2020-12-31 00:00:00, you get a 0.1518 return.
 
-Note: 2020-10-22 00:00:00 and 2020-12-31 00:00:00 was randomly picked as it was the range that the linear regression article used.
+Note: 2020-10-22 00:00:00 and 2020-12-31 00:00:00 was randomly picked as it was the range that the linear regression article used. Also, these returns were calcuted using validation.py.
 
 # Conclusion
 
