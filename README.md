@@ -1,7 +1,7 @@
 # Predicting Financial Time Series Data with an LSTM-Transformer Machine Learning Model
 # Note: My pre-trained model is not publicly available. Available upon request.
 
-Is Financial Time Series Data even predictable? Many believe that moves in financial time series data are synonymous with Brownian Motion in physics, which is how microscopic particles move randomly due to surrounding collisions. Question answered. It sounds like cannot be predicted. However, this may be only the case for the human eye. Using computers and machine learning, there is a possibility for non-linear patterns.
+Is Financial Time Series Data even predictable? Many believe that moves in financial time series data are synonymous with Brownian Motion in physics, which is how microscopic particles move randomly due to surrounding collisions. Question answered. It sounds like cannot be predicted. However, this may be only the case for the human eye. Using computers and machine learning, there is a possibility for learning and predicting non-linear patterns.
 
 # Model Logistics
 
